@@ -1,6 +1,6 @@
 package Ejercicio1;
 
-public class Empleado {
+public class Empleado implements Comparable<Empleado> {
 
 	private final int id;
 	private String nombre;
@@ -48,6 +48,12 @@ public class Empleado {
 	@Override
 	public String toString() {
 		return "Empleado " + nombre + ", edad:" + edad + ", Legajo:" + id;
+	}
+	@Override
+	public int compareTo(Empleado arg0) {
+		if (this.id == arg0.id) {return 0;}
+		else {return 1;}
+		
 	}
 	
 }
