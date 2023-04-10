@@ -28,6 +28,19 @@ public class mainEjercicio1_b {
 			System.out.println(p.toString());
 		}
 		
+		// PUNTO 7
+		Profesor pA = new Profesor("Martin",45,"titular",5);
+		Profesor pB = new Profesor("Martin",45,"titular",5);
+				
+	    if(pA.equals(pB))
+		{
+			System.out.println("Es el mismo profesor");
+		}
+		else
+		{
+			System.out.println("No es el mismo profesor");
+		}
+				
 		
 	}
 
