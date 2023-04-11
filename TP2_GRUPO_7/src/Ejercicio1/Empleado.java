@@ -1,5 +1,7 @@
 package Ejercicio1;
 
+import java.util.Objects;
+
 public class Empleado implements Comparable<Empleado> {
 
 	private final int id;
@@ -55,5 +57,27 @@ public class Empleado implements Comparable<Empleado> {
 		else {return 1;}
 		
 	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+	
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Empleado) || obj == null) {
+            return false;
+        }
+        Empleado empleado = (Empleado) obj;
+        return Objects.equals(nombre, empleado.nombre) && edad == empleado.edad;
+    }
+	
+	
 	
 }
