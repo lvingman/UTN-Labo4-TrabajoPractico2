@@ -5,18 +5,18 @@ import java.time.LocalDate;
 public class Producto {
 
 	private LocalDate fechaCaducidad;
-	private int NumeroLote;
+	private int numeroLote;
 	 
 	public Producto()
 	{
 		this.fechaCaducidad = LocalDate.of(2022, 8, 30);
-		this.NumeroLote = 1;
+		this.numeroLote = 1;
 	}
 	
 	public Producto(LocalDate f, int NumeroLote)
 	{
 		this.fechaCaducidad = f;
-		this.NumeroLote = NumeroLote;
+		this.numeroLote = NumeroLote;
 	}
 	 
 	public LocalDate getFechaCaducidad() {
@@ -28,16 +28,16 @@ public class Producto {
 	}
 
 	public int getNumeroLote() {
-		return NumeroLote;
+		return numeroLote;
 	}
 
 	public void setNumeroLote(int numeroLote) {
-		NumeroLote = numeroLote;
+		this.numeroLote = numeroLote;
 	}
 
 	@Override
 	public String toString() {
-		return "Producto [fecha de Caducidad: " + fechaCaducidad + ", Numero de Lote: " + NumeroLote +"]";
+		return "Producto [fecha de Caducidad: " + fechaCaducidad + ", Numero de Lote: " + numeroLote +"]";
 	}
 	   
 }
