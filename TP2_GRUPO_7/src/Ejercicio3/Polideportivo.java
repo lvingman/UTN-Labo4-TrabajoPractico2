@@ -3,18 +3,8 @@ package Ejercicio3;
 public class Polideportivo extends Edificio implements InstalacionDeportiva  {
 
 	///ATRIBUTOS
-	private float superficie;
 	private String nombre;
 	
-	//GETS & SETS
-	
-	public float getSuperficie() {
-		return superficie;
-	}
-
-	public void setSuperficie(float superficie) {
-		this.superficie = superficie;
-	}
 
 	public String getNombre() {
 		return nombre;
@@ -28,6 +18,11 @@ public class Polideportivo extends Edificio implements InstalacionDeportiva  {
 	public int getTipoDeInstalacion() {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public String toString() {
+		return "Polideportivo [nombre=" + nombre + " Superficie= " + getSuperficieEdificio() +"]" ;
 	}
 
 	

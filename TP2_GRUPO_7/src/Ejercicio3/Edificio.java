@@ -1,6 +1,6 @@
 package Ejercicio3;
 
-public class Edificio {
+public abstract class Edificio {
 
 	private double SuperficieEdificio;
 	
