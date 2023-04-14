@@ -14,6 +14,12 @@ public class Polideportivo extends Edificio implements InstalacionDeportiva  {
 		this.nombre = nombre;
 	}
 	
+	public Polideportivo(String nombre, double SuperficieEdificio) {
+		super(SuperficieEdificio);
+		this.nombre = nombre;
+		
+	}
+	
 	@Override
 	public int getTipoDeInstalacion() {
 	

@@ -10,11 +10,13 @@ public class Oficina extends Edificio{
 	
 	public Oficina()
 	{
+		super();
 		this.numOficinas = 0;
 	}
 	
-	public Oficina(int numOficinas)
+	public Oficina(int numOficinas, double SuperficieEdificio)
 	{
+		super(SuperficieEdificio);
 		this.numOficinas = numOficinas;
 	}
 	
@@ -32,7 +34,7 @@ public class Oficina extends Edificio{
 	
 	@Override
 	public String toString() {
-		return "Oficina [Numero de Oficinas=" + numOficinas + "]";
+		return "Oficina [Numero de Oficinas=" + numOficinas + " Superficie: " + getSuperficieEdificio() + "]";
 	}
 	
 
